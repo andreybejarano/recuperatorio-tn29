@@ -5,6 +5,8 @@ const cors = require('cors');
 const mainRouter = require('./routers/main');
 const userApiRoutes = require('./routers/api/user');
 const productApiRoutes = require('./routers/api/product');
+const categoryProductRoutes = require('./routers/api/categoryProduct');
+const roleRoutes = require('./routers/api/role');
 
 
 const app = express();
@@ -22,6 +24,8 @@ app.use(express.static('public'));
 app.use('/', mainRouter);
 app.use('/api/user', userApiRoutes);
 app.use('/api/product', productApiRoutes);
+app.use('/api/category', categoryProductRoutes);
+app.use('/api/role', roleRoutes);
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
