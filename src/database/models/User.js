@@ -8,6 +8,15 @@ module.exports = (sequelize, dataTypes) => {
         },
         name: {
             type: dataTypes.STRING
+        },
+        email: {
+            type: dataTypes.STRING
+        },
+        password: {
+            type: dataTypes.STRING
+        },
+        roles_id: {
+            type: dataTypes.INTEGER
         }
     };
     let config = {

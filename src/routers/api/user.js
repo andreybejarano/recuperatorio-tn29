@@ -6,6 +6,6 @@ const router = express.Router();
 
 // Implementar logica para retornar todos los usuarios
 router.get('/', userController.index);
-router.post('/', userController.list);
+router.post('/', userController.create);
 
 module.exports = router;
