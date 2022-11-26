@@ -16,16 +16,7 @@ module.exports = (sequelize, dataTypes) => {
       type: dataTypes.DECIMAL(11, 2)
     },
     product_categories_id: {
-      type: dataTypes.INTEGER,
-      defaultValue: 1,
-      onDelete: 'CASCADE',
-      onUpdate: 'CASCADE',
-      references: {
-        model: {
-          tableName: 'product_categories'
-        },
-        key: 'id'
-      }
+      type: dataTypes.INTEGER
     }
   };
   let config = {
