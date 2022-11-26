@@ -5,6 +5,7 @@ const productController = require('../../controllers/api/categoryProductControll
 const router = express.Router();
 
 // Implementar logica para retornar todos las categorias de productos
-// router.???('/', productController.index);
+ router.get('/', productController.index);
+ router.post('/', productController.create);
 
 module.exports = router;
