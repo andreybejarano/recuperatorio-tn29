@@ -5,6 +5,7 @@ const userController = require('../../controllers/api/userController');
 const router = express.Router();
 
 // Implementar logica para retornar todos los usuarios
-// router.???('/', userController.index);
+router.get('/', userController.index);
+router.post('/', userController.list);
 
 module.exports = router;
